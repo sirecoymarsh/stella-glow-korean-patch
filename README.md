@@ -1,4 +1,4 @@
-# Stella Glow 한국어 패치 v31
+# Stella Glow 한국어 패치 v32
 
 <p align="center">
   <img src="docs/images/stella-glow-10th-anniversary.png" alt="Stella Glow 10th anniversary artwork" width="100%">
@@ -11,10 +11,10 @@ Nintendo 3DS용 **Stella Glow 영어판 Undub**(`CTR-P-BS3E`)에 적용하는 �
 일본어 음성을 원하면 Undub 버전을, 영어 음성을 원하시면 오리지날 버전을 구하십시오.
 
 - 대상 Title ID: `0004000000173700`
-- 최신 버전: **v31.1**
+- 최신 버전: **v32**
 - 기준 원본 CIA SHA-256: `9388921B8209F8F2741916335A33EDF0D661BE8F1450CAF38314D7EF309437C9`
-- 패치 파일: RomFS 1,470개
-- 패치 데이터: 21,196,253 bytes
+- 패치 파일: RomFS 1,471개
+- 패치 데이터: 21,199,590 bytes
 - 완성 CIA와 원본 게임 데이터 전체는 포함하지 않습니다.
 
 ## 지원 범위
@@ -23,7 +23,7 @@ Nintendo 3DS용 **Stella Glow 영어판 Undub**(`CTR-P-BS3E`)에 적용하는 �
 - 인물·지명·아이템·스킬·프로필 문자열 교정
 - 한글 폰트와 문자 폭·명도 조정
 - 메뉴·전투·상점·저장 화면 등 안전한 범위의 UI 한국어화
-- v31까지 확인된 오역, 표기 통일, 숫자·기호 간격 및 UI 잘림 개선
+- v32까지 확인된 오역, 표기 통일, 숫자·기호 간격 및 UI 잘림 개선
 - 전투 상태·시작·결과·세계 지도용 이미지 문자열 추가 한국어화
 - 폰트 개선 이전에 축약했던 대사를 의미 보존형 문장으로 복원
 - 대사 한글 본문 획의 불투명도와 흐린 구성요소 보정
@@ -68,7 +68,7 @@ PowerShell에서 다음 명령을 실행합니다.
 powershell -ExecutionPolicy Bypass -File .\verify_patch.ps1
 ```
 
-검증기는 `metadata/patch_manifest_v31.json`에 기록된 RomFS 1,470개의
+검증기는 `metadata/patch_manifest_v32.json`에 기록된 RomFS 1,471개의
 크기 및 SHA-256을 확인합니다.
 
 ## 알려진 사항
@@ -82,7 +82,7 @@ powershell -ExecutionPolicy Bypass -File .\verify_patch.ps1
 
 ```text
 luma/titles/0004000000173700/romfs/   패치 파일
-metadata/patch_manifest_v31.json      파일별 원본/패치 해시
+metadata/patch_manifest_v32.json      파일별 원본/패치 해시
 verify_patch.ps1                      패치 무결성 검사
 CHANGELOG.md                          변경 기록
 ```

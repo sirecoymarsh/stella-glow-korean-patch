@@ -2,7 +2,7 @@ param(
     [string]$PackageRoot = $PSScriptRoot
 )
 $ErrorActionPreference = 'Stop'
-$manifestPath = Join-Path $PackageRoot 'metadata\patch_manifest_v31.json'
+$manifestPath = Join-Path $PackageRoot 'metadata\patch_manifest_v32.json'
 $manifest = Get-Content -Raw -LiteralPath $manifestPath | ConvertFrom-Json
 $titleRoot = Join-Path $PackageRoot 'luma\titles\0004000000173700'
 $romfs = Join-Path $titleRoot 'romfs'
@@ -58,4 +58,4 @@ if ($failed.Count -gt 0) {
     $failed | ForEach-Object { Write-Error $_ }
     throw "Patch verification failed: $($failed.Count) file(s)"
 }
-Write-Host "PASS: $($manifest.changed_file_count) RomFS + $($manifest.extra_file_count) extra v31.1 patch files verified."
+Write-Host "PASS: $($manifest.changed_file_count) RomFS + $($manifest.extra_file_count) extra v32 patch files verified."
